@@ -1,69 +1,67 @@
 .products {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 121px;
+  padding-bottom: 98px;
+
+  &__label {
+    font-size: 18px;
+    line-height: 1.16;
+    color: getColor('title-helper');
+  }
+
+  &__title {
+    font-size: 34px;
+    line-height: 1.15;
+    letter-spacing: 0.04em;
+    color: getColor('title-color');
+    padding-top: 15px;
+    padding-bottom: 31px;
+  }
+
+  &__grid {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 121px;
-    padding-bottom: 98px;
-
-    &__label {
-        font-size: 18px;
-        line-height: 1.16;
-        color: getColor('title-helper');
-    }
-
-    &__title {
-        font-size: 34px;
-        line-height: 1.15;
-        letter-spacing: 0.04em;
-        color: getColor('title-color');
-        padding-top: 15px;
-        padding-bottom: 31px;
-
-    }
-
-    &__grid {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        list-style: none;
-    }
+    list-style: none;
+  }
 }
 
 .product {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 24px;
 
-    &__bg {
-
-        &--pink {
-            background-color: getColor('main-color');
-        }
-
-        &--beige {
-            background-color: getColor('second-main');
-        }
-
-        &--mint {
-            background-color: getColor('third-main');
-        }
+  &__bg {
+    &--pink {
+      background-color: getColor('main-color');
     }
 
-    &__name {
-        font-size: 20px;
-        line-height: 23px;
-        letter-spacing: 0.04em;
-        color: getColor('basic-color');
+    &--beige {
+      background-color: getColor('second-main');
     }
 
-    &__desc {
-        font-weight: 700;
-        font-size: 14px;
-        line-height: 152%;
-        letter-spacing: 0.04em;
-        color: getColor('basic-color');
-        text-align: center;
-        padding: 40px 30px;
+    &--mint {
+      background-color: getColor('third-main');
     }
+  }
+
+  &__name {
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.04em;
+    color: getColor('basic-color');
+  }
+
+  &__desc {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 152%;
+    letter-spacing: 0.04em;
+    color: getColor('basic-color');
+    text-align: center;
+    padding: 40px 30px;
+  }
 }
