@@ -1,0 +1,16 @@
+.contacts {
+  display: flex;
+  flex-direction: column;
+  background-color: #999;
+  
+  &__title{
+    display: none;
+  }
+
+
+  &__list{
+    list-style-type: none;
+  }
+}
+
+

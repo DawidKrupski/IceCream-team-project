@@ -85,4 +85,16 @@
   color: getColor("basic-color");
   text-align: center;
   padding: 40px 30px;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  background-color: #999;
+}
+.contacts__title {
+  display: none;
+}
+.contacts__list {
+  list-style-type: none;
 }/*# sourceMappingURL=main.css.map */
